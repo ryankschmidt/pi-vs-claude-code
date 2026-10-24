@@ -1,0 +1,56 @@
+{
+  "schema": "throughline.seam-manifest.v1",
+  "upstream": {
+    "remote_url": "https://github.com/disler/pi-vs-claude-code.git",
+    "sha": "0ed11f44932fdef29bd98467700019762298f50d"
+  },
+  "fork": {
+    "sha": "0ed11f44932fdef29bd98467700019762298f50d"
+  },
+  "merge_base": "0ed11f44932fdef29bd98467700019762298f50d",
+  "counts": {
+    "upstream_edit": 0,
+    "upstream_removed": 0,
+    "fork_added": 0,
+    "fork_namespace": 0
+  },
+  "entries": [],
+  "upstream_changes": [],
+  "conflict_rules": {
+    "default": "review",
+    "capability_paths": "retain-fork-and-run-capability-tests"
+  },
+  "migration": {
+    "ship_seams": {
+      "source": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rules": [],
+      "resolutions": []
+    },
+    "projector": {
+      "source": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capabilities": []
+  },
+  "repository": {
+    "product": "comsnet",
+    "origin": "https://github.com/ryankschmidt/pi-vs-claude-code.git",
+    "upstream": "https://github.com/disler/pi-vs-claude-code.git",
+    "upstream_pin": {
+      "kind": "commit",
+      "ref": "main@0ed11f44932fdef29bd98467700019762298f50d",
+      "sha": "0ed11f44932fdef29bd98467700019762298f50d"
+    },
+    "design_start_commit": "0ed11f44932fdef29bd98467700019762298f50d",
+    "namespace_patterns": [
+      "^comsnet/"
+    ],
+    "approval_dir": "docs/throughline/tax-approvals/",
+    "sanctioned_non_namespace": [
+      "throughline-seam.json",
+      "docs/throughline/"
+    ]
+  },
+  "external_customizations": []
+}

@@ -5,16 +5,102 @@
     "sha": "0ed11f44932fdef29bd98467700019762298f50d"
   },
   "fork": {
-    "sha": "0ed11f44932fdef29bd98467700019762298f50d"
+    "sha": "8b5992ca62a1f08ed7afb34084a84968a57fadc1"
   },
   "merge_base": "0ed11f44932fdef29bd98467700019762298f50d",
   "counts": {
     "upstream_edit": 0,
     "upstream_removed": 0,
     "fork_added": 0,
-    "fork_namespace": 0
+    "fork_namespace": 5
   },
-  "entries": [],
+  "entries": [
+    {
+      "path": "comsnet/hooks/pre-commit",
+      "class": "fork-namespace",
+      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "comsnet/README.md",
+      "class": "fork-namespace",
+      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "docs/throughline/README.json",
+      "class": "fork-namespace",
+      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "docs/throughline/tax-approvals/README.json",
+      "class": "fork-namespace",
+      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    },
+    {
+      "path": "throughline-seam.json",
+      "class": "fork-namespace",
+      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
+      ],
+      "legacy_rules": []
+    }
+  ],
   "upstream_changes": [],
   "conflict_rules": {
     "default": "review",
@@ -42,7 +128,7 @@
       "ref": "main@0ed11f44932fdef29bd98467700019762298f50d",
       "sha": "0ed11f44932fdef29bd98467700019762298f50d"
     },
-    "design_start_commit": "0ed11f44932fdef29bd98467700019762298f50d",
+    "design_start_commit": "8b5992ca62a1f08ed7afb34084a84968a57fadc1",
     "namespace_patterns": [
       "^comsnet/"
     ],
@@ -52,5 +138,22 @@
       "docs/throughline/"
     ]
   },
-  "external_customizations": []
+  "external_customizations": [],
+  "tax_policy": {
+    "schema": "throughline.upstream-tax-policy.v1",
+    "baseline_count": 0,
+    "target_count": 0,
+    "baseline_fork": "8b5992ca62a1f08ed7afb34084a84968a57fadc1",
+    "pinned_upstream": "0ed11f44932fdef29bd98467700019762298f50d",
+    "approved_growth_files": [],
+    "approved_swap_files": []
+  },
+  "admitted": {
+    "upstream_edit_count": 0,
+    "fork_added_count": 0,
+    "uncovered_fork_path_count": 5,
+    "fork_sha": "8b5992ca62a1f08ed7afb34084a84968a57fadc1",
+    "admitted_at": "2026-10-24T12:45:03.135Z",
+    "admitted_by": "01a16de5-cc29-7790-80e0-22169ed3e2af"
+  }
 }

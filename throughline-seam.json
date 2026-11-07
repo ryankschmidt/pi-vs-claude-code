@@ -5,14 +5,14 @@
     "sha": "0ed11f44932fdef29bd98467700019762298f50d"
   },
   "fork": {
-    "sha": "6616812bcd1a8643618ec29e79a3f8701385ab56"
+    "sha": "03c13cb3d02990d9c9918aa07d85a28c7a066705"
   },
   "merge_base": "0ed11f44932fdef29bd98467700019762298f50d",
   "counts": {
     "upstream_edit": 0,
     "upstream_removed": 0,
     "fork_added": 0,
-    "fork_namespace": 5
+    "fork_namespace": 6
   },
   "admitted": {
     "upstream_edit_count": 0,
@@ -23,6 +23,23 @@
     "admitted_by": "01a16de5-cc29-7790-80e0-22169ed3e2af"
   },
   "entries": [
+    {
+      "path": "comsnet/hooks/commit-msg",
+      "class": "fork-namespace",
+      "reason": "2e86f301f7e42c89341a75966f1da50dd8b84078 comsnet: commit-msg hook runs the Dan card gate",
+      "reason_source": "commit-subjects",
+      "imported_private_symbols": [],
+      "schema_assumptions": [],
+      "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
+      "conflict_rule": "review",
+      "conflict_rule_source": "review",
+      "conflict_rule_inferred": false,
+      "marker": false,
+      "commits": [
+        "2e86f301f7e42c89341a75966f1da50dd8b84078 comsnet: commit-msg hook runs the Dan card gate"
+      ],
+      "legacy_rules": []
+    },
     {
       "path": "comsnet/hooks/pre-commit",
       "class": "fork-namespace",
@@ -43,8 +60,8 @@
     {
       "path": "comsnet/README.md",
       "class": "fork-namespace",
-      "reason": "Dan adoption boundary: socket delivery is separate from Absurd owning every message record and its real sender; HTTP/SSE and unrecorded messages are not used.",
-      "reason_source": "released documentation order",
+      "reason": "2c926427d1324e8f0698b754380e99ca596c2ad3 docs(comsnet): point the fork README to the Dan adopt/adapt/don't-use card\n8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason_source": "commit-subjects",
       "imported_private_symbols": [],
       "schema_assumptions": [],
       "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
@@ -53,6 +70,7 @@
       "conflict_rule_inferred": false,
       "marker": false,
       "commits": [
+        "2c926427d1324e8f0698b754380e99ca596c2ad3 docs(comsnet): point the fork README to the Dan adopt/adapt/don't-use card",
         "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
       ],
       "legacy_rules": [],
@@ -95,7 +113,7 @@
     {
       "path": "throughline-seam.json",
       "class": "fork-namespace",
-      "reason": "6616812bcd1a8643618ec29e79a3f8701385ab56 seam: bind stable bootstrap and zero-tax admission\n8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason": "03c13cb3d02990d9c9918aa07d85a28c7a066705 seam: declare coverage for the comsnet fork-owned files\n2e86f301f7e42c89341a75966f1da50dd8b84078 comsnet: commit-msg hook runs the Dan card gate\n6616812bcd1a8643618ec29e79a3f8701385ab56 seam: bind stable bootstrap and zero-tax admission\n8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
       "reason_source": "commit-subjects",
       "imported_private_symbols": [],
       "schema_assumptions": [],
@@ -105,6 +123,8 @@
       "conflict_rule_inferred": false,
       "marker": false,
       "commits": [
+        "03c13cb3d02990d9c9918aa07d85a28c7a066705 seam: declare coverage for the comsnet fork-owned files",
+        "2e86f301f7e42c89341a75966f1da50dd8b84078 comsnet: commit-msg hook runs the Dan card gate",
         "6616812bcd1a8643618ec29e79a3f8701385ab56 seam: bind stable bootstrap and zero-tax admission",
         "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
       ],

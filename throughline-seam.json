@@ -157,5 +157,28 @@
     "pinned_upstream": "0ed11f44932fdef29bd98467700019762298f50d",
     "approved_growth_files": [],
     "approved_swap_files": []
+  },
+  "coverage": {
+    "schema": "throughline.seam-coverage.v1",
+    "capabilities": [
+      {
+        "name": "repository-seam-controls",
+        "rule": "Retain the repository seam ledger, approval guidance and the pre-commit and commit-msg gates (seam tax and Dan card gate); review changes against the pinned zero-tax contract.",
+        "paths": [
+          "docs/throughline/README.json",
+          "docs/throughline/tax-approvals/README.json",
+          "throughline-seam.json",
+          "comsnet/hooks/pre-commit",
+          "comsnet/hooks/commit-msg"
+        ]
+      },
+      {
+        "name": "dan-card-pointer",
+        "rule": "Retain the fork README pointing to the adopt/adapt/do-not-use card for Dan's pi-vs-claude-code socket design; the HTTP/SSE hub stays unused.",
+        "paths": [
+          "comsnet/README.md"
+        ]
+      }
+    ]
   }
 }

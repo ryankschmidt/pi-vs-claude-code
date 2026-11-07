@@ -5,7 +5,7 @@
     "sha": "0ed11f44932fdef29bd98467700019762298f50d"
   },
   "fork": {
-    "sha": "8b5992ca62a1f08ed7afb34084a84968a57fadc1"
+    "sha": "6616812bcd1a8643618ec29e79a3f8701385ab56"
   },
   "merge_base": "0ed11f44932fdef29bd98467700019762298f50d",
   "counts": {
@@ -13,6 +13,14 @@
     "upstream_removed": 0,
     "fork_added": 0,
     "fork_namespace": 5
+  },
+  "admitted": {
+    "upstream_edit_count": 0,
+    "fork_added_count": 0,
+    "uncovered_fork_path_count": 5,
+    "fork_sha": "8b5992ca62a1f08ed7afb34084a84968a57fadc1",
+    "admitted_at": "2026-10-24T12:45:03.135Z",
+    "admitted_by": "01a16de5-cc29-7790-80e0-22169ed3e2af"
   },
   "entries": [
     {
@@ -35,19 +43,20 @@
     {
       "path": "comsnet/README.md",
       "class": "fork-namespace",
-      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
-      "reason_source": "commit-subjects",
+      "reason": "Dan adoption boundary: socket delivery is separate from Absurd owning every message record and its real sender; HTTP/SSE and unrecorded messages are not used.",
+      "reason_source": "released documentation order",
       "imported_private_symbols": [],
       "schema_assumptions": [],
       "contract_inspection": "not-reviewed: empty symbol/schema lists do not assert absence; behavior coverage is separately capability-gated",
-      "conflict_rule": "review",
-      "conflict_rule_source": "review",
+      "conflict_rule": "Preserve the card pointer and adopt/adapt/do-not-use section in comsnet/, preserve the historical quoted block unchanged, and never move fork guidance into upstream files.",
+      "conflict_rule_source": "released documentation order and fork namespace rule",
       "conflict_rule_inferred": false,
       "marker": false,
       "commits": [
         "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
       ],
-      "legacy_rules": []
+      "legacy_rules": [],
+      "feature": "dan-code-selection"
     },
     {
       "path": "docs/throughline/README.json",
@@ -86,7 +95,7 @@
     {
       "path": "throughline-seam.json",
       "class": "fork-namespace",
-      "reason": "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
+      "reason": "6616812bcd1a8643618ec29e79a3f8701385ab56 seam: bind stable bootstrap and zero-tax admission\n8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook",
       "reason_source": "commit-subjects",
       "imported_private_symbols": [],
       "schema_assumptions": [],
@@ -96,6 +105,7 @@
       "conflict_rule_inferred": false,
       "marker": false,
       "commits": [
+        "6616812bcd1a8643618ec29e79a3f8701385ab56 seam: bind stable bootstrap and zero-tax admission",
         "8b5992ca62a1f08ed7afb34084a84968a57fadc1 seam: ledger, approvals folder and pre-commit hook"
       ],
       "legacy_rules": []
@@ -147,13 +157,5 @@
     "pinned_upstream": "0ed11f44932fdef29bd98467700019762298f50d",
     "approved_growth_files": [],
     "approved_swap_files": []
-  },
-  "admitted": {
-    "upstream_edit_count": 0,
-    "fork_added_count": 0,
-    "uncovered_fork_path_count": 5,
-    "fork_sha": "8b5992ca62a1f08ed7afb34084a84968a57fadc1",
-    "admitted_at": "2026-10-24T12:45:03.135Z",
-    "admitted_by": "01a16de5-cc29-7790-80e0-22169ed3e2af"
   }
 }

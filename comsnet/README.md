@@ -2,14 +2,26 @@
 title: "ComsNet rail"
 description: "Ryan-owned socket rail namespace; upstream files remain unchanged."
 type: reference
+name: comsnet
+purpose: "Route fork builders to Dan adoption boundaries while keeping socket delivery separate from Absurd message records."
 status: active
 created: "2026-10-24"
-last_updated: "2026-10-24"
+last_updated: "2026-11-07"
 ---
 
 # ComsNet rail
 
 This folder is the ComsNet rail home inside Ryan’s fork of Dan’s whole repository. The stock extensions/, scripts/ and specs/ trees stay as upstream wrote them.
+
+## Dan's code: adopt, adapt, don't use
+
+IndyDevDan (YouTube) / disler (GitHub). [Read the adopt/adapt rule card](http://mbp21.tailec334b.ts.net:8129/v/vault/r/01_Projects/workbench/infra/pi-harness/_meta/disler-repos-2026-11-06/READ-FIRST-Adopt-Or-Adapt-Dan.md). Source: /Users/Admin/core-root/vault/01_Projects/workbench/infra/pi-harness/_meta/disler-repos-2026-11-06/READ-FIRST-Adopt-Or-Adapt-Dan.md before using upstream code or lessons.
+
+- **Adopt:** the socket-messaging idea from `pi-vs-claude-code`; ComsNet means only this design and what we build from it, never Seatmail.
+- **Adapt:** one host messaging service, one Unix socket per agent, kernel-identified peers; record every message in Absurd with its real sender before acknowledgement. Pi Durable owns the agent run, not the shared message record.
+- **Don't use:** the HTTP/SSE hub or ephemeral unrecorded messages; retained upstream files are history, not adopted runtime behavior.
+
+Fork additions stay under `^comsnet/` and are recorded in `throughline-seam.json`; stock upstream files remain unchanged.
 
 ## Kept, changed and dropped — Oct 16, 2026, 10:08 PM PDT
 
